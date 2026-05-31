@@ -104,9 +104,10 @@
       <h2>Project status</h2>
       <ul class="status-list">
         <li><span class="dot done"></span><strong>Design:</strong> essentially complete — every system is specced in the docs.</li>
-        <li><span class="dot done"></span><strong>Scaffold:</strong> all component repos build and are committed.</li>
-        <li><span class="dot done"></span><strong>First slice:</strong> server version-handshake + login works end-to-end (humans and bots).</li>
-        <li><span class="dot wip"></span><strong>Next:</strong> the live session — spawn, movement, and a first combat + AI loop.</li>
+        <li><span class="dot done"></span><strong>Stack alive end-to-end:</strong> version handshake, DB-backed login, spawn and click-to-move movement work for humans and bots over Protobuf/TCP, against a PostgreSQL-persisted world.</li>
+        <li><span class="dot done"></span><strong>Objects from modules:</strong> a code-defined catalog of hull classes, modules and items; ships are instances whose mass, power and speed are <em>derived</em> from the modules fitted to them.</li>
+        <li><span class="dot done"></span><strong>Godot client:</strong> log in to a live view of sprite ships on a parallax starfield, with a radar minimap and a HUD shell — ships glide between updates and turn toward where they move.</li>
+        <li><span class="dot wip"></span><strong>Next:</strong> real interest management (sensors vs jammers), then a first combat + AI loop.</li>
       </ul>
       <p class="note">
         This is an early, in-progress rebuild. The infrastructure has been solved many times over
